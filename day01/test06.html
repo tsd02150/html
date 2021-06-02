@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>폼테스트</title>
+  </head>
+  <body>
+    <h1>레드향 주문</h1>
+    <form action="order.html" method="GET">
+      <fieldset>
+        <legend>상품선택</legend>
+        <label for="nametxt">이 름 : </label><input id="nametxt" name="name">
+        <p>
+        <label>아이디 : </label><input name="id">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>배송정보</legend>
+        <input type="text" name="txt"> <br>
+        <input type="password" name="ps"> <br>
+        <input type="email" name="email"> <br>
+        <input type="date" name="date"> <br>
+        <input type="color" name="col">
+      </fieldset>
+      <fieldset>
+        <legend>상품선택</legend>
+        <legend>주문할 상품을 선택해주세요</legend>
+        <label><input type="checkbox" name="check" value="s_3">선물용 3kg</label>
+        <label><input type="checkbox" name="check" value="s_5">선물용 5kg</label>
+        <label><input type="checkbox" name="check" value="f_3">가정용 3kg</label>
+        <label><input type="checkbox" name="check" value="f_5">가정용 5kg</label>
+        
+        <legend>포장선택</legend>
+        <label><input type="radio" name="r" value="yes">선물 포장</label>
+        <label><input type="radio" name="r" value="no">선물 포장 안함</label><br>
+
+        <input type="number" min="0" max="100" step="5" value="0" name="num"> <br>
+        <input type="range" min="0" max="100" value="0">
+        <input type="file" name="file">
+
+      </fieldset>
+      <input type="submit">
+      <input type="image" src="./img/img01.jpg" width="100"><br>
+      <input type="button" value="공지 창 열기" onclick="window.open('order.html')">
+    </form>
+  </body>
+</html>
