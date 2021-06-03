@@ -1,0 +1,48 @@
+*{margin: 15px;}
+
+p {
+  text-align: left;
+  color: #099;
+  font-style: italic;
+  font-size: 2em;
+  font-family: 'D2Coding', cursive;
+  line-height: 2.0;
+}
+
+h1{
+  padding: 10px;
+  background-color:black;
+  color: aliceblue;
+  border: 10px solid bisque;
+}
+
+.accent{
+  border: 2px solid #123;
+  padding: 5px;
+  color: hsla(0,100%,50%,0.2);
+}
+
+.bg{
+  background-color: #abc;
+}
+
+#container{
+  width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #111;
+}
+
+body{
+  font-family: "맑은 고딕",돋움,굴림;
+  background: url(./img/img04.png);
+  background-repeat: no-repeat;
+}
+
+.color1{
+  color: rgb(255,255,255);
+}
+
+.color2{
+  color: rgba(255,255,255,0.5);
+}

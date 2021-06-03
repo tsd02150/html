@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>css test</title>
+
+  <link rel="stylesheet" href="test01.css">
+  <!-- 이건 외부스타일 (우선순위 낮다)-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+
+  <style>
+    /* p{text-align: right;} */
+    /* 이건 내부스타일 (우선순위 중간)*/
+    @font-face {
+      font-family: 'D2Coding';
+      src: url('D2Coding.woff2') format('woff2'),
+        url('D2Coding.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center;">css 연습</h1>
+  <p style="text-align: center;">
+    <!-- 인라인스타일 (우선순위 높음)-->
+    뉴스스탠드 바로가기 주제별캐스트 바로가기 타임스퀘어 바로가기 쇼핑캐스트 바로가기 로그인 바로가기.
+    NAVER whale 여러분의 눈은 소중하니까,
+  </p>
+  <p>aaa</p>
+  <p class="accent">You know, I am a job seeker now.</p>
+  <div class="accent bg">So, I am<span class="accent">busy</span>and tired.</div>
+  <div id="container">
+    <h1>나는</h1>
+    <p>배가고프당</p>
+  </div>
+
+  <h1 class="color1">HTML</h1>
+  <h1 class="color2">CSS</h1>
+
+  <a href="http://naver.com" style="text-decoration: none;">네이버</a>
+</body>
+
+</html>
