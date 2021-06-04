@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+      .desc{
+        background-color: paleturquoise;
+        border: 5px dotted black;
+        width: 400px;
+        height: 200px;
+        margin: 30px;
+        padding: 30px;
+      }
+      #clip-border{background-clip: border-box; float: left;}
+      #clip-padding{background-clip: padding-box; float: left;}
+      #clip-content{background-clip: content-box; float: left;}
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="desc" id="clip-border">....</div>
+      <div class="desc" id="clip-padding">....</div>
+      <div class="desc" id="clip-content">....</div>
+    </div>
+  </body>
+</html>
