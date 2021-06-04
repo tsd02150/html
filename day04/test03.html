@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+      div{
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin: 100px;
+      }
+      #box1{
+        background-color: greenyellow;
+        border: 1px solid transparent;
+        animation-name: shape;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      #box2{
+        background-color: darkviolet;
+        border: 1px solid transparent;
+        animation-name: rotate;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes shape{
+        from{border: 1px solid transparent;}
+        to{
+          border: 1px solid black;
+          border-radius: 50%;
+        }
+      }
+      @keyframes rotate{
+        from{border: 1px solid transparent;}
+        to{transform: rotate(45deg);}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+  </body>
+</html>

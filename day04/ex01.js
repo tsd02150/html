@@ -1,0 +1,10 @@
+var fruit;
+var f_name;
+var tmp;
+var box;
+f_name = prompt("어떤 과일?", "");
+fruit = prompt("과일개수를 입력해 주십시오. : ", "");
+tmp = prompt("1박스에 몇개 씩 들어갈지 설정해 주십시오. : ", "");
+box = parseInt(fruit / tmp);
+fruit %= box;
+document.write(f_name + " " + box + "박스와 " + fruit + "개 입니다.");
