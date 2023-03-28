@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>포지셔닝</title>
+  <style>
+    #box1{
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+    }
+    #box2{
+      width: 200px;
+      height: 200px;
+      background-color: burlywood;
+      position: relative;
+      top: -50px;
+      left: 50px;
+      text-align: center;
+    }
+    #box2 div{
+      width: 35px;
+      height: 35px;
+      background-color: black;
+      position: absolute;
+
+    }
+    #box3{
+      top: 70px;
+      left: 35px;
+    }
+    #box4{
+      top: 70px;
+      right: 35px;
+    }
+    #box5{
+      bottom: 0;
+      left: 47.5px;
+    }
+    #box6{
+      bottom: 0;
+      right: 47.5px;
+      background-color: white;
+    }
+    #box7{
+      top: 130px;
+      left: 82.5px;
+    }
+    img{
+      width: 100px;
+      height: 120px;
+    }
+    .hid{
+      /* visibility: hidden; */
+      opacity: 0;
+    }
+    #box8{
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      top: 50px;
+      right: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div id="box1">box1</div>
+  <div id="box2">box2
+    <div id="box3">box3</div>
+    <div id="box4">box4</div>
+    <div id="box5">box5</div>
+    <div id="box6">box6</div>
+    <div id="box7">box7</div>
+  </div>
+  <img src="img/말티즈.jpg">
+  <img src="img/말티즈.jpg" class="hid">
+  <img src="img/말티즈.jpg">
+  <div id="box8">fixed</div>
+</body>
+</html>

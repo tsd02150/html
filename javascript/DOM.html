@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="heading">문서 객체 속성 변경</h1>
+  <img src="../html/img/강아지1.jpg" id="dog1" width="200" height="200">
+  <script>
+    let header = document.getElementById('heading');
+    header.innerHTML = '이미지 변경';
+    header.style.border="3px solid red";
+    header.style.backgroundColor="black";
+    header.style.color="white";
+    header.style.display="block";
+    header.style.width="400px";
+    header.style.textAlign = "center";
+
+    let bigPic = document.querySelector("#dog1");
+    bigPic.setAttribute('src','../html/img/강아지2.jpg');
+    bigPic.setAttribute('width','400');
+    bigPic.setAttribute('height','400');
+    bigPic.style.border="3px dotted black";
+    bigPic.style.borderRadius="30px";
+    
+    
+  </script>
+</body>
+</html>

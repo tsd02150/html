@@ -1,0 +1,39 @@
+#container{
+  width:600px;
+  margin:0 auto;
+}
+h1{
+  text-align: center;
+}
+ul {
+  list-style:none;
+}
+.field {
+  float:left;
+  width:100px;
+  font-weight:bold;
+  font-size:0.9em;
+  line-height: 55px;
+  text-align:center;
+  margin-right:15px;
+}
+#user_info input{
+  width:350px;
+  height:25px;
+  border:1px solid #aaa;
+  border-radius:5px;
+  padding:5px;
+  margin:10px 0;
+}
+.r{
+  line-height: 55px;
+}
+
+button {
+  width:250px;
+  height:40px;
+  margin-right:10px;
+  border:1px solid #ccc;
+  background:#eee;
+  font-size:0.9em;
+}

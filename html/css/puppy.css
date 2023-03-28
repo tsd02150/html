@@ -1,0 +1,97 @@
+#container{
+  width: 900px;
+  margin: 0 auto;
+}
+nav {
+  background-color: darkblue;
+  text-align: right;
+  height: 100px;
+  padding-right: 40px;
+  background-image: url(../img/dogicon.jpg);
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+nav ul {
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  line-height: 80px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  background-color: aliceblue;
+  margin: 0;
+  padding: 10px;
+}
+section ul {
+  text-align: center;
+  height: 50px;
+}
+section li{
+  display: inline-block;
+  padding: 10px;
+  font-weight: bold;
+}
+section ul a {
+  color: blue;
+  text-decoration: none;
+}
+
+article {
+  padding: 10px;
+  margin-top: 10px;
+}
+article h3{
+  background-image: url(../img/dogicon.jpg);
+  background-size: 22px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+.bordersolid{
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+}
+.borderdot{
+  border: 2px dotted green;
+  border-radius: 20px;
+}
+.borderdouble{
+  border: 2px double brown;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+figure {
+  text-align: center;
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+.start{
+  text-align: right;
+  margin-right: 24px;
+}
+.start a{
+  text-decoration: none;
+}
+aside{
+  background-color: rgb(247, 247, 225);
+  padding: 10px;
+}
+aside h3,ul{
+  margin: 0;
+  list-style: none;
+}
+footer{
+  background-color: darkblue;
+  color: white;
+  padding: 10px;
+}

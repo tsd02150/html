@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>array test</title>
+</head>
+<body>
+  <script>
+    // let seasons = ["봄", "여름", "가을", "겨울"];
+    // let colors = ["빨강", "주황", "노랑", "초록"];
+    // console.log(seasons);
+    // let concats = seasons.concat(colors);
+    // console.log(concats);
+    // console.log(seasons.join(" : "));
+    // console.log(seasons.reverse());
+    // console.log(seasons);
+    // colors.push("파랑");
+    // console.log(colors);
+    // colors.unshift("하양");
+    // console.log(colors);
+    // colors.pop();
+    // colors.pop();
+    // console.log(colors);
+    // colors.shift();
+    // console.log(colors);
+    // colors.splice(1,1,"주황","보라","민트");
+    // console.log(colors);
+    // seasons.splice(2,0,"늦여름");
+    // console.log(seasons);
+    // let selectColor=colors.slice(2,4);
+    // console.log(selectColor);
+    // let num=0;
+    // console.log(Array.isArray(colors));
+    // console.log(Array.isArray(num));
+    // console.log(colors.indexOf("민트"));
+    // colors.forEach(function(element,index,colors){
+    //   console.log(`index : ${index}, element : ${element} of colors \n`);
+    // });
+    // colors.forEach((element,index,colors)=>console.log(`index : ${index}, element : ${element} of colors \n`));
+    // console.log(colors);
+    // console.log(colors.sort((a,b)=>{return a>b?1:-1;}));
+    // console.log(colors.sort((a,b)=>{return a<b?1:-1;}));
+    // let suArr=[8,5,12,45,99,1];
+    // console.log(suArr.sort());
+    // console.log(suArr.sort((a,b)=>{return a>b?1:-1}));
+    // console.log(suArr.sort((a,b)=>{return a-b}));
+
+    // function Student(name,kor,eng,math,art){
+    //   this.name=name;
+    //   this.kor=kor;
+    //   this.eng=eng;
+    //   this.math=math;
+    //   this.art=art;
+    // }
+    // Student.prototype.getSum=function(){
+    //   return this.kor+this.eng+this.math+this.art;
+    // }
+    // Student.prototype.getAvg=function(){
+    //   return this.getSum()/4;
+    // }
+    // Student.prototype.toResult=function(){
+    //   console.log(`${this.name} \t ${this.getSum()} \t ${this.getAvg()}`);
+    // }
+    // let personList=[["홍길동",96,98,92,98],["성춘향",88,74,78,92],["이몽룡",69,89,92,78],["임영웅",97,95,89,98],["성유리",66,80,92,94]];
+    // let student=[];
+    // for(let element of personList){
+    //   student.push(new Student(...element));
+    // }
+    // console.log(`이름 \t 총점 \t 평균 \t`);
+    // for(let i in student){
+    //   student[i].toResult();
+    // }
+    
+    let arr = [2,4,6,8,10];
+    console.log(arr);
+    let sum = arr.reduce((a,b)=>a+b);
+    arr.push(sum);
+    console.log(arr);
+
+</script>
+</body>
+</html>

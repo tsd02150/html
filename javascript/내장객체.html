@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // let date = new Date();
+    // console.log(date.getFullYear());
+    // console.log(date.getMonth());
+    // console.log(date.getDate());
+    // console.log(date.getDay());
+    // console.log(date);
+    // console.log(new Date(1));
+    // console.log(new Date(1671938700000));
+    // console.log(date.getHours());
+    // console.log(date.getMinutes());
+    // console.log(date.getSeconds());
+    // console.log(date.getMilliseconds());
+    // console.log(date.toGMTString());
+    // console.log(date.toLocaleString());
+    // console.log(date.getTime());
+
+    // let now = new Date();
+    // let xmas = new Date("2023-12-25");
+    // let first = new Date("2023-2-22");
+    // let remain = Math.round((xmas-now)/24/3600/1000);
+    // let remain2 = Math.floor((now-first)/24/3600/1000);
+    // console.log(`크리스마스 까지 ${remain}일 남았습니다`);
+    // console.log(`입교 후 ${remain2}일 지났습니다`);
+
+    // let max = Math.max;
+    // console.log(max(52,512,103,777,57,32));
+    // console.log(Math.pow(3,3));
+    // console.log(Math.floor(Math.random()*45+1));
+
+    let lottoLine='';
+    let temp;
+    let lotto='';
+    for(let i=0;i<5;i++){
+      lottoLine='';
+      for(let j=0;j<6;j++){
+        temp=Math.floor(Math.random()*45+1);
+        if(lottoLine.search(temp)==-1){
+            // lottoLine+=temp+'\t';
+            lottoLine+=temp+'&nbsp&nbsp&nbsp';
+        }else{
+          j--;
+       }      
+      }
+      // lotto += lottoLine+'\n';
+      lotto += lottoLine+'<br>';
+    }
+    // console.log(lotto);
+    document.write(lotto);
+  </script>
+</body>
+</html>

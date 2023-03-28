@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>object test</title>
+</head>
+<body>
+  <script>
+    // function clone(obj){
+    //   let output={};
+    //   for(let i in obj){
+    //     output[i] = obj[i];
+    //   }
+    //   return output;
+    // }
+    // let original = {a:10,b:20};
+    // let referenced=original;
+    // let cloned=clone(original);
+    // original.a=88;
+    // console.log(original);
+    // console.log(referenced);
+    // console.log(cloned);
+
+    // let object={
+    //   number:273,
+    //   string : "text",
+    //   Boolean : true,
+    //   array : [1,2,3,4],
+    //   func : function(food){console.log(`${food}를 먹어요`);}
+    // }
+    // object.func("바나나");
+    // console.log(object.string);
+    // let output='';
+    // for(let key in object){
+    //   output+=`-${key} : ${object[key]} \n`;
+    // }
+    // console.log(output);
+
+    // let origin = {a:10,b:20}
+    // origin.c=777;
+    // console.log(origin);
+    // origin.func=function(){};
+    // console.log(origin);
+    // delete(origin.c);
+    // delete(origin.func);
+    // console.log(origin);
+
+    // function Student(name,korean,math,english,science){
+    //   this.name=name;
+    //   this.korean=korean;
+    //   this.math=math;
+    //   this.english=english;
+    //   this.science=science;
+    //   this.getSum=function(){
+    //     return this.korean+this.math+this.english+this.science;
+    //   }
+    //   this.getAvg=function(){
+    //     return this.getSum()/4;
+    //   }
+    //   this.toString=function(){
+    //     return this.name+'\t 총점:'+this.getSum()+'\t 평균:'+this.getAvg();
+    //   }
+    // }
+    // let student = new Student('홍길동',96,98,92,98);
+    // console.log(student)
+    // console.log(student.toString());
+
+    // function Product(name,weight,price){
+    //   this.name=name;
+    //   this.weight=weight;
+    //   this.price=price;
+    //   this.calculate=function(w){
+    //     return `${name} ${w}g : ${(w/this.weight)*this.price}원`;
+    //   }
+    // }
+    // let pig = new Product("삼겹살",100,1690);
+    // let cow = new Product("꽃등심",50,5000);
+    // console.log(pig.calculate(500));
+    // console.log(cow.calculate(100));
+
+    function Student(name,kor,eng,mat){
+      this.name=name;
+      this.kor=kor;
+      this.eng=eng;
+      this.mat=mat;
+      // this.getSum=function(){
+      //   return this.kor+this.eng+this.mat;
+      // }
+      // this.getAvg=function(){
+      //   return this.getSum()/3;
+      // }
+      // this.toString=function(){
+      //   return `${this.name}의 국어 : ${this.kor}  영어 : ${this.eng}  수학 : ${this.mat}  총점 : ${this.getSum()} 평균 : ${this.getAvg()}`;
+      // }
+    }
+    let student = new Student("홍길동",80,90,90);
+    Student.prototype.getSum=function(){
+      return this.kor+this.eng+this.mat;
+    }
+    Student.prototype.getAvg=function(){
+      return this.getSum()/3;
+    }
+    Student.prototype.toString=function(){
+      return `${this.name}의 국어 : ${this.kor}  영어 : ${this.eng}  수학 : ${this.mat}  총점 : ${this.getSum()} 평균 : ${this.getAvg()}`;
+    }
+    console.log(student.toString());
+  </script>
+</body>
+</html>

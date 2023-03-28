@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #container{
+      margin-top: 50px;
+      margin-left: 100px;
+      padding: 20px;
+      height: 60px;
+      animation-name: moving;
+      animation-duration: 6s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @keyframes moving{
+      0%{
+        width: 200px;
+        background: #faef7c;
+        opacity: 0.5;
+        transform: scale(0.5) rotate(15deg);
+      }
+      25%{
+        width: 400px;
+        background: #ff9400;
+        opacity: 1;
+        transform: scale(1) rotate(0);
+      }
+      50%{
+        width: 200px;
+        background: #ff1100;
+        opacity: 0.5;
+        transform: scale(0.5) rotate(-15deg);
+      }
+      100%{
+        width: 400px;
+        background: #ff9400;
+        opacity: 1;
+        transform: scale(1) rotate(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h3>CSS3 Animation</h3>
+  </div>
+</body>
+</html>

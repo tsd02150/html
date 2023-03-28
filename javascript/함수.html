@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>function test</title>
+</head>
+<body>
+  <h3>함수</h3>
+  <script>
+    // function sum(a=0,b=0){
+    //   sum=a+b;
+    //   return sum;
+    // }
+    // console.log(sum(1,2));
+    // console.log(sum(1));
+
+    // var func = function (){
+    //   alert(`func A`);
+    // }
+    // var func = function (){
+    //   alert(`func B`);
+    // }
+    // func();
+    // function func(){
+    //   alert(`func C`);
+    // }
+
+    // var func=function(){alert(`func A`);}
+    // function func(){alert(`func B`);}
+    // func();
+
+    // let sum=(a,b)=>a+b;
+    // console.log(sum(5,10));
+
+    // function pyta(w,h){
+    //   function square(x){
+    //     return x*x;
+    //   }
+    //   return Math.sqrt(square(w)+square(h));
+    // }
+    // let result = pyta(4,9);
+    // console.log(result);
+
+    // function callTenTimes(callback){
+    //   for(let i = 0; i< 10;i++){
+    //     callback(i);
+    //   }
+    // }
+    // let callback=function(i){
+    //   console.log(`함수 호출 ${i}`);
+    // }
+    // callTenTimes(callback);
+
+    // function test(name){
+    //   let output = `hello`+name;
+    //   return function(){
+    //     console.log(output);
+    //   }
+    // }
+    // test('javascript')();
+
+    // let calc = function(x,y,...restparams){
+    //   return x+y+restparams.reduce((sum,param)=> sum+param);
+    // }
+    // let arr=[0,1];
+    // console.log(calc(-1,...arr,2,...[3]));
+    // console.log(calc(-1,0,1,2,3));
+    // let arr2=[1,2,3,4,5,6];
+    // console.log(calc(...arr2));
+    // console.log(calc(null,...arr2));
+
+    // var a=1;
+    // var b=5;
+    // function outfunc(){
+    //   function innerfunc(){
+    //     a=b;
+    //   }
+    //   console.log(a);
+    //   a=3;
+    //   b=4;
+    //   innerfunc();
+    //   console.log(a);
+    //   var b=2;
+    //   console.log(b);
+    // }
+    // outfunc();
+    // console.log(b);
+
+    function grade(avg){
+      if(avg>=90){
+        return "수";
+      }
+      else if(avg>=80){
+        return "우";
+      }
+      else if(avg>=70){
+        return "미";
+      }
+      else if(avg>=60){
+        return "양";
+      }
+      else{
+        return "가";
+      }
+    }
+    function sungjuk(name,kor,eng,mat){
+      let avg=(kor+eng+mat)/3;
+      console.log(`${name} | ${kor} | ${eng} | ${mat} | 평균: ${avg} | 등급: ${grade(avg)}`);
+    }
+    function sungjukManage(arr){
+      for(let i=0;i<arr.length;i++){
+        sungjuk(...arr[i]);
+      }
+    }
+    let personList=[["홍길동",70,60,90],["성춘향",90,70,90],["이몽룡",80,60,70],["신재영",60,50,90]];
+    sungjukManage(personList);
+    
+
+
+  </script>
+</body>
+</html>

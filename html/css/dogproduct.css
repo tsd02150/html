@@ -1,0 +1,80 @@
+*{
+  box-sizing: border-box;
+}
+#container{
+  width: 800px;
+  margin: 0 auto;
+
+}
+header{
+  background-color: palevioletred;
+  height: 100px;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+}
+nav ul{
+  list-style: none;
+  text-align: right;
+  line-height: 100px;
+  background-image: url(../img/dogicon.jpg);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: 9px 9px;
+}
+nav li{
+  padding: 20px;
+  display: inline;
+  font-weight: bold;
+  border-left: 3px solid white;
+  padding-left: 5px;
+}
+section{
+  float: left;
+  width: 590px;
+  padding-top: 25px;
+  color: black;
+  background-color: white;
+}
+section h1{
+  margin: 0;
+  margin-bottom: 20px;
+}
+article{
+  float: left;
+  width: 285px;
+  height: 320px;
+  border-top: 2px dashed gray;
+  border-bottom: 2px dashed gray;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 10px;
+  text-align: justify;
+}
+article p{
+  text-indent: 16px;
+}
+aside{
+  width: 200px;
+  float: left;
+  padding-left: 5px;
+  padding-right: 25px;
+  margin-top: 52px;
+}
+img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 25px;
+}
+footer{
+  clear: both;
+  background-color: palevioletred;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 20px;
+  text-align: right;
+  font-weight: bold;
+}

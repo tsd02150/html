@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>3단 레이아웃</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    #container{
+      width: 960px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+    header{
+      border: 1px solid #ccc;
+      height: 80px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    #left_side{
+      border: 1px solid #ccc;
+      background-color: #ddd;
+      width: 220px;
+      height: 300px;
+      padding: 20px;
+      margin-bottom: 20px;
+      float: left;
+    }
+    section{
+      border: 1px solid #ccc;
+      /* width: 384px; */
+      width: 468px;
+      height: 300px;
+      float: left;
+      padding: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 20px;
+    }
+    section article{
+      margin-bottom: 20px;
+    }
+    #right_side{
+      border: 1px solid #ccc;
+      background-color: #ddd;
+      width: 220px;
+      height: 300px;
+      padding: 20px;
+      margin-bottom: 20px;
+      float: right;
+    }
+    aside article{
+      margin-bottom: 20px;
+    }
+    footer{
+      border: 1px solid #ccc;
+      padding: 10px;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <nav>
+        <h1>사이트 제목</h1>
+      </nav>
+    </header>
+    <aside id="left_side">
+      <h1>왼쪽 사이드바</h1>
+      <article><p>광고1</p></article>
+      <article><p>광고2</p></article>
+    </aside>
+    <section>
+      <h1>본문</h1>
+      <article><p>내용 입력1</p></article>
+      <article><p>내용 입력2</p></article>
+    </section>
+    <aside id="right_side">
+      <h1>오른쪽 사이드바</h1>
+      <article><p>광고1</p></article>
+      <article><p>광고2</p></article>
+    </aside>
+    <footer>
+      <h1>푸터</h1>
+      <article><p>저작권 정보, 연락처 등</p></article>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+#container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#check {
+  width: 100%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 350px;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+  font-size: 1em;
+}
+
+h2 {
+  color: red !important;
+  font-size: 1em;
+}
+h2 {
+  color: green;
+  font-size: 1em;
+}
+p {
+  font-weight: 900;
+  line-height: 2em;
+}
+
+.accent {
+  color: blue;
+}
+
+.smalltxt {
+  font-size: 0.8em;
+}
+
+/* table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  border: 1px solid #ccc;
+} */

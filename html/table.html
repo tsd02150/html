@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>테이블</title>
+    <style>
+      thead{
+        background-color: pink;
+      }
+      tbody{
+        text-align: center;
+      }
+      tfoot{
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <caption>파라다이스 객실</caption>
+      <colgroup>
+        <col>
+        <col style="background-color: yellow;">
+        <col span="2" style="background-color: greenyellow;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>방 이름</th>
+          <th>대상</th>
+          <th>크기</th>
+          <th>가격</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>핑크방</th>
+          <td>여성</td>
+          <td rowspan="3">4인실</td>
+          <td rowspan="4">1인 20,000원</td>
+        </tr>
+        <tr>
+          <th rowspan="2">보라방</th>
+          <td>동성</td>
+        </tr>
+        <tr>
+          <td>가족 1팀</td>
+        </tr>
+        <tr>
+          <th>그린방</th>
+          <td>-</td>
+          <td>2인실</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <th colspan="4">바깥채 전체를 렌트합니다.</th>
+      </tfoot>
+    </table>
+  </body>
+</html>

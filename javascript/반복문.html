@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      box-sizing: border-box;
+    }
+    #container{
+      width: 800px;
+      margin: 0 auto;
+      display: flex;
+      position: relative;
+      justify-content: space-around;
+      flex-flow: row wrap;
+      background-color: black;
+    }
+    .dan{
+      text-align: center;
+      width: 200px;
+      margin: 10px;
+      padding: 20px;
+      color: white;
+      
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // let evenSum=0;
+    // let oddSum=0;
+    // for(let i=1;i<=100;i++){
+    //   if(i%2==0){
+    //     evenSum+=i;
+    //   }
+    //   else{
+    //     oddSum+=i;
+    //   }
+    // }
+    // console.log(`홀수합 ${oddSum}이고 짝수합 ${evenSum}임`);
+
+    // let fiveSum=0;
+    // for(let i=1;i<=100;i++){
+    //   if(i%5==0){
+    //     fiveSum+=i;
+    //   }
+    // }
+    // console.log(`1에서 100까지 5의 배수의 합 : ${fiveSum}`);
+
+    // let n=Number(prompt(`숫자 입력 ㄱㄱ`));
+    // let result=1;
+    // for(let i=1;i<=n;i++){
+    //   result*=i;
+    // }
+    // console.log(`${n}!(팩토리얼) : ${result}`);
+
+    // let result="";
+    // for(let i=2;i<=9;i=i+3){
+    //   for(let j=1;j<=9;j++){
+    //     for(let x=i;x<=i+2;x++){
+    //       if(x==10){break;}
+    //       result=j*x;
+    //       result=result.toString();
+    //       result=result.padStart(2,"0");
+    //       document.write(`${x} * ${j} = ${result}`);
+    //       document.write(`&nbsp &nbsp &nbsp`);
+    //     }
+    //     document.write(`<br>`);
+    //   }
+    //   document.write(`<br>`);
+    // }
+
+    // let result="";
+    // document.write(`<div id=container>`);
+    // for(let i=2;i<=9;i++){
+    //   document.write(`<div class=dan>`);
+    //   for(let j=1;j<=9;j++){
+    //     document.write(`${i} * ${j} = ${i*j}`);
+        
+    //     document.write(`<br>`);
+    //   }
+    //   document.write(`</div>`);
+    // }
+    // document.write(`</div>`);
+
+    // let leng=Number(prompt('길이를 입력하시오'));
+    // let blank=leng/2;
+    // let star=1;
+    // let tkn=0;
+    // for(let i=0;i<leng;i++){
+    //   for(let j=1;j<=blank;j++){
+    //     document.write(`&nbsp &nbsp`);
+    //   }
+    //   for(let z=0;z<star;z++){
+    //     document.write(`&nbsp*&nbsp`);
+    //     if(star>=leng){
+    //       tkn=1;
+    //     }
+    //   }
+    //   document.write(`<br>`);
+    //   if(tkn==0){
+    //     blank-=1;
+    //     star+=2;
+    //   }else{
+    //     blank+=1;
+    //     star-=2;
+    //   }
+    // }
+
+    // let leng;
+    // leng=Number(prompt("길이 입력"));
+    // let star="";
+    // for(let i=0;i<leng/2;i++){  
+    //   for(let j=i+1;j<leng/2;j++){
+    //     star+=" ";
+    //   }
+    //   for(let j=0;j<i*2+1;j++){
+    //     star+="*";
+    //   }
+    //   star+="\n";
+    // }
+    // for(let i=leng/2;i>0;i--){
+    //   for(let j=i-1;j<leng/2;j++){
+    //     star+=" ";
+    //   }
+    //   for(let j=1;j<i*2-1 ;j++){
+    //     star+="*";
+    //   }
+    //   star+="\n";
+    // }
+    // console.log(star);
+
+
+    // let leng;
+    // leng=Number(prompt("길이 입력"));
+    // let star="";
+    // for(let i=1;i<=(leng+1)/2;i++){  
+    //   for(let j=1;j<=(leng+1)/2-i;j++){
+    //     star+=" ";
+    //   }
+    //   for(let j=0;j<i*2-1;j++){
+    //     star+="*";
+    //   }
+    //   star+="\n";
+    // }
+    // for(let i=(leng-1)/2;i>1;i--){
+    //   for(let j=i;j<(leng-1)/2;j++){
+    //     star+=" ";
+    //   }
+    //   for(let j=0;j<i*2-2 ;j++){
+    //     star+="*";
+    //   }
+    //   star+="\n";
+    // }
+    // console.log(star);
+
+    // let array = [58,5,78,6,9,70,34,58,32,8,12];
+    // let max = array[0];
+    // let min = array[0];
+    // let cnt=0;
+    // for(let i=0; i<array.length; i++){
+    //   if(max < array[i]){
+    //     max = array[i];
+    //   }
+    //   if(min > array[i]){
+    //     min = array[i];
+    //   }
+    //   if(array[i]%4==0 || array[i]%8==0){
+    //     cnt++;
+    //   }
+    // }
+    // console.log(`최대값은 ${max}`);
+    // console.log(`최소값은 ${min}`);
+    // console.log(`4의 배수이거나 8의 배수는 ${cnt}개`);
+    
+    // let aa=50;
+    // let bb=100;
+    // let temp=aa;
+    // aa=bb;
+    // bb=temp;
+    // console.log(`aa : ${aa} / bb : ${bb}`);
+
+    
+    
+  </script>
+</body>
+</html>
